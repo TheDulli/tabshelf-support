@@ -24,7 +24,7 @@ Chrome Web Store: `ADD_YOUR_STORE_URL_HERE`
 See [PRIVACY.md](PRIVACY.md).
 For Chrome Web Store listing, use the public URL of this file:
 
-`https://github.com/YOUR_GITHUB_USERNAME/tabshelf-support/blob/main/PRIVACY.md`
+`https://github.com/TheDulli/tabshelf-support/blob/main/PRIVACY.md`
 
 ## Links
 
@@ -32,3 +32,4 @@ For Chrome Web Store listing, use the public URL of this file:
 - Security policy: [SECURITY.md](SECURITY.md)
 - Privacy policy: [PRIVACY.md](PRIVACY.md)
 - Release notes: [CHANGELOG.md](CHANGELOG.md)
+
