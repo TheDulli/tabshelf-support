@@ -6,7 +6,7 @@ Please do not disclose security vulnerabilities in public issues.
 
 Use this private channel instead:
 
-- `mailto:warblademaster@gmail.com`
+- `warblademaster@gmail.com`
 
 Include:
 
@@ -20,4 +20,5 @@ Include:
 - We will acknowledge receipt as soon as possible.
 - After validation, we will coordinate a fix and release.
 - Public disclosure should happen only after a fix is available.
+
 
