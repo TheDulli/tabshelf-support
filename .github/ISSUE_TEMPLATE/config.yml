@@ -1,5 +1,5 @@
 blank_issues_enabled: false
 contact_links:
   - name: Security vulnerability report
-    url: ADD_YOUR_SECURITY_CONTACT_URL_HERE
+    url: https://github.com/<your-user>/<your-support-repo>/security/policy
     about: Please report security vulnerabilities privately.
