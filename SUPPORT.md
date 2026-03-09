@@ -22,4 +22,4 @@ This repository handles public support for TabShelf:
 ## Store and policy links
 
 - Chrome Web Store: `ADD_YOUR_STORE_URL_HERE`
-- Privacy policy: `ADD_YOUR_PRIVACY_POLICY_URL_HERE`
+- Privacy policy (public URL): `https://github.com/YOUR_GITHUB_USERNAME/tabshelf-support/blob/main/PRIVACY.md`

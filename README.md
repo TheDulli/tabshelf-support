@@ -21,12 +21,14 @@ Chrome Web Store: `ADD_YOUR_STORE_URL_HERE`
 
 ## Privacy
 
-TabShelf is local-first. For the full policy, see:
+See [PRIVACY.md](PRIVACY.md).
+For Chrome Web Store listing, use the public URL of this file:
 
-- `ADD_YOUR_PRIVACY_POLICY_URL_HERE`
+`https://github.com/YOUR_GITHUB_USERNAME/tabshelf-support/blob/main/PRIVACY.md`
 
 ## Links
 
 - Support policy: [SUPPORT.md](SUPPORT.md)
 - Security policy: [SECURITY.md](SECURITY.md)
+- Privacy policy: [PRIVACY.md](PRIVACY.md)
 - Release notes: [CHANGELOG.md](CHANGELOG.md)
