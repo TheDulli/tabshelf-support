@@ -10,16 +10,16 @@ body:
     id: extension_version
     attributes:
       label: TabShelf version
-      description: Example: 1.1.0
-      placeholder: 1.1.0
+      description: "Example: 1.1.0"
+      placeholder: "1.1.0"
     validations:
       required: true
   - type: input
     id: chrome_version
     attributes:
       label: Chrome version
-      description: Open chrome://version
-      placeholder: 123.0.x
+      description: "Open chrome://version"
+      placeholder: "123.0.x"
     validations:
       required: true
   - type: dropdown
