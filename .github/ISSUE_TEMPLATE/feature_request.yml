@@ -1,0 +1,36 @@
+name: Feature request
+description: Suggest an improvement for TabShelf
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the idea. Please focus on the user problem first.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem are you trying to solve?
+      placeholder: I want to...
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      placeholder: It would help if TabShelf could...
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Any workaround you currently use.
+    validations:
+      required: false
+  - type: textarea
+    id: impact
+    attributes:
+      label: Who would benefit?
+      description: Describe your use case and expected impact.
+    validations:
+      required: false
