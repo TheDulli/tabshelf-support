@@ -1,5 +1,13 @@
 ﻿# Changelog
  
+## [1.2.1] - 2026-03-15
+
+### Changed
+- Popup `Open TabShelf` action now opens the extension's own TabShelf page in a browser-neutral way across supported browsers.
+
+### Fixed
+- Active Tabs hidden-count messaging no longer counts browser new-tab pages as hidden non-`http`/`https` tabs.
+
 ## [1.2.0] - 2026-03-11
 ### First public production release
 
