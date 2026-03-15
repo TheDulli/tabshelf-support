@@ -21,6 +21,6 @@ This repository handles public support for TabShelf:
 
 ## Store and policy links
 
-- Chrome Web Store: `ADD_YOUR_STORE_URL_HERE`
+- Chrome Web Store: `https://chromewebstore.google.com/detail/TabShelf/omgpocbcefnbgloechiijkddfkilabgn?hl=en-US&utm_source=ext_sidebar`
 - Privacy policy (public URL): `https://github.com/TheDulli/tabshelf-support/blob/main/PRIVACY.md`
 
