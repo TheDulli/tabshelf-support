@@ -15,11 +15,11 @@ body:
     validations:
       required: true
   - type: input
-    id: chrome_version
+    id: browser
     attributes:
-      label: Chrome version
-      description: "Open chrome://version"
-      placeholder: "123.0.x"
+      label: Browser and version
+      description: "Examples: Chrome 123, Edge 123, Brave 1.75"
+      placeholder: "Chrome 123.0.x"
     validations:
       required: true
   - type: dropdown

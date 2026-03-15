@@ -1,6 +1,6 @@
 ﻿# TabShelf Support
 
-This repository is the public support hub for the **TabShelf** Chrome extension.
+This repository is the public support hub for the **TabShelf** browser extension.
 
 - Bug reports: use the `Bug report` issue form.
 - Feature ideas: use the `Feature request` issue form.
@@ -8,12 +8,14 @@ This repository is the public support hub for the **TabShelf** Chrome extension.
 
 ## Install
 
-Chrome Web Store: `https://chromewebstore.google.com/detail/TabShelf/omgpocbcefnbgloechiijkddfkilabgn?hl=en-US&utm_source=ext_sidebar`
+Current public listing:
+
+- Chrome Web Store: `https://chromewebstore.google.com/detail/TabShelf/omgpocbcefnbgloechiijkddfkilabgn?hl=en-US&utm_source=ext_sidebar`
 
 ## What to include in bug reports
 
-- TabShelf version (from extension details page)
-- Chrome version
+- TabShelf version (from the extension details page)
+- Browser name and version
 - OS version
 - Exact steps to reproduce
 - Expected behavior vs actual behavior
@@ -22,7 +24,7 @@ Chrome Web Store: `https://chromewebstore.google.com/detail/TabShelf/omgpocbcefn
 ## Privacy
 
 See [PRIVACY.md](PRIVACY.md).
-For Chrome Web Store listing, use the public URL of this file:
+For store or listing submissions, use the public URL of this file:
 
 `https://github.com/TheDulli/tabshelf-support/blob/main/PRIVACY.md`
 

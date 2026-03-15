@@ -2,7 +2,7 @@
 
 Last updated: 2026-03-09
 
-TabShelf is a local-first Chrome extension.
+TabShelf is a local-first browser extension.
 
 ## What data TabShelf uses
 
@@ -12,7 +12,7 @@ TabShelf is a local-first Chrome extension.
 
 ## How data is stored
 
-- Data is stored locally in your browser bookmarks.
+- Data is stored locally using your browser's bookmarks system.
 - Legacy local storage data may be migrated once into bookmarks.
 
 ## Data sharing
