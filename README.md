@@ -8,7 +8,7 @@ This repository is the public support hub for the **TabShelf** Chrome extension.
 
 ## Install
 
-Chrome Web Store: `ADD_YOUR_STORE_URL_HERE`
+Chrome Web Store: `https://chromewebstore.google.com/detail/TabShelf/omgpocbcefnbgloechiijkddfkilabgn?hl=en-US&utm_source=ext_sidebar`
 
 ## What to include in bug reports
 
