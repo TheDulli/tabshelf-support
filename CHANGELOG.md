@@ -1,5 +1,14 @@
-﻿# Changelog
- 
+# Changelog
+
+## [1.2.2] - 2026-03-17
+
+### Fixed
+- Light theme inline text fields now use accessible light-surface backgrounds, borders, and placeholder contrast so typed text remains readable while renaming items or creating spaces.
+- Root `TabShelf` bookmark folder creation is now coordinated to avoid duplicate root folders on first install.
+- Shelf collapsed state no longer creates visible `tabshelf://meta?...` bookmarks; legacy meta bookmarks are migrated and removed when TabShelf loads.
+- Bookmark-root resolution now works on machines where browser bookmark parent IDs differ from the original `1`/`2` assumptions, reducing profile-specific shelf-creation failures on affected installs.
+- Blank bookmark parent IDs now fall back to the default top-level root instead of failing with `Can't find bookmark for id`, improving recovery when bookmark profile state is inconsistent.
+
 ## [1.2.1] - 2026-03-15
 
 ### Changed
