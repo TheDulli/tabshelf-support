@@ -11,6 +11,7 @@ This repository is the public support hub for the **TabShelf** browser extension
 Current public listing:
 
 - Chrome Web Store: `https://chromewebstore.google.com/detail/TabShelf/omgpocbcefnbgloechiijkddfkilabgn?hl=en-US&utm_source=ext_sidebar`
+- Microsoft Edge Add-ons: `https://microsoftedge.microsoft.com/addons/detail/njbcdmliogjhhbcdpdoiplblmppbflgl`
 
 ## What to include in bug reports
 

@@ -23,5 +23,6 @@ This repository handles public support for TabShelf:
 ## Public links
 
 - Chrome Web Store: `https://chromewebstore.google.com/detail/TabShelf/omgpocbcefnbgloechiijkddfkilabgn?hl=en-US&utm_source=ext_sidebar`
+- Microsoft Edge Add-ons: `https://microsoftedge.microsoft.com/addons/detail/njbcdmliogjhhbcdpdoiplblmppbflgl`
 - Privacy policy (public URL): `https://github.com/TheDulli/tabshelf-support/blob/main/PRIVACY.md`
 
