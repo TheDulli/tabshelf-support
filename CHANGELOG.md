@@ -1,5 +1,24 @@
 # Changelog
 
+## [1.3.0] - 2026-03-30
+
+### Added
+- Bookmark density options in the new-tab Settings menu, with `Compact` as the default plus denser `Dense` and `Tight` card layouts.
+- Per-bookmark favicon mode toggles in the saved-item menu so any bookmark can switch between the website favicon and the default TabShelf icon.
+
+### Changed
+- Saved bookmark cards now use a more compact default layout so more items fit in each shelf row before switching to denser modes.
+- The new-tab Settings panel now shows each Theme, Density, Root, and favicon option directly instead of cycling through hidden values one click at a time.
+- The TabShelf logo and name in the toolbar now read as static branding instead of a clickable button-like control.
+- Shelf headers now keep fold/unfold on the title and use a separate grip-style drag handle so reorder is easier to understand.
+- Active Tabs saved-link pills now include an explicit details button that reveals the matching space names without opening the panel while users scan or drag the list.
+- Active Tabs saved-link details now stay anchored directly above or below the selected row and remain open until explicit dismissal, so they do not disappear while users read the saved-space list.
+
+### Fixed
+- The Active Tabs saved-details popover now uses a readable light-theme surface and text treatment instead of reusing the dark-theme panel colors.
+- The floating help button now centers its `?` glyph correctly inside the circular control for consistent tip icon alignment.
+- Switching a bookmark's favicon mode now updates the clicked card in place instead of visibly refreshing the whole shelf view.
+
 ## [1.2.2] - 2026-03-17
 
 ### Fixed
