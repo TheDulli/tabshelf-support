@@ -13,6 +13,17 @@ Current public listing:
 - Chrome Web Store: `https://chromewebstore.google.com/detail/TabShelf/omgpocbcefnbgloechiijkddfkilabgn?hl=en-US&utm_source=ext_sidebar`
 - Microsoft Edge Add-ons: `https://microsoftedge.microsoft.com/addons/detail/njbcdmliogjhhbcdpdoiplblmppbflgl`
 
+## What TabShelf does
+
+- Save open tabs into named spaces.
+- Reopen all bookmarks in a space with one click, including in a separate browser window.
+- Organize spaces by creating, renaming, folding, deleting, and reordering them.
+- Drag saved bookmarks between spaces.
+- Inspect saved bookmark and active-tab URLs from hover tooltips.
+- Use Smart Names to clean noisy saved bookmark titles and show compact domain details.
+- Import and export spaces as JSON.
+- Choose theme, bookmark density, root folder, favicon, and Smart Names settings.
+
 ## What to include in bug reports
 
 - TabShelf version (from the extension details page)

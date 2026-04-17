@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.4.0] - 2026-04-15
+
+### Added
+- Bookmark cards now show the saved URL in a TabShelf tooltip when hovered, making links easier to inspect before opening.
+- Active Tabs rows now show the tab URL in a tooltip while you hover them.
+- Each space header now includes a one-click action to open all saved bookmarks from that space in a separate browser window.
+- New saved bookmarks can use cleaner names by removing common noisy page-title suffixes, while still keeping existing custom names intact.
+- Bookmark cards can now show compact domain metadata for faster scanning.
+- Settings now includes a Smart Names preference, enabled by default, for automatic bookmark-name cleanup and domain metadata.
+
 ## [1.3.0] - 2026-03-30
 
 ### Added
