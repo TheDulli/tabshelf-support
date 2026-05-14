@@ -3,6 +3,7 @@
 TabShelf replaces the browser new-tab page with a workspace for saving, organizing, and reopening tabs as named spaces.
 
 ## Quick Start
+
 1. Open a new tab to see TabShelf.
 2. Use `Capture Tabs` to prepare a new space from the current window's open tabs.
 3. Name the space in the placeholder and choose `Create`.
@@ -10,16 +11,20 @@ TabShelf replaces the browser new-tab page with a workspace for saving, organizi
 5. Click a saved bookmark card to open it in the current tab.
 
 ## Spaces
+
 Spaces are named groups of saved links.
 
 - `New Space` scrolls to the placeholder so you can create an empty space.
+- `Filter spaces` narrows the current visible space list by space name or saved-link text. Clear the filter to show every space again.
 - The grip handle in a space header reorders spaces.
 - The space title folds or unfolds that space.
-- `Fold All` folds or unfolds every space at once.
-- Space header actions can open all saved bookmarks, open the space in a new window, rename the space, or delete it.
+- `Fold All` folds or unfolds every visible space; while filtering, hidden spaces are left unchanged.
+- Space header actions include the pin icon to pin or unpin the space, open all saved bookmarks, open the space in a new window, rename the space, or delete it.
+- Pinned spaces stay grouped at the top of the space list. Unpinning a space moves it to the top of normal spaces.
 - Deleting a space removes that TabShelf space from the local browser bookmark folder.
 
 ## Capture Tabs
+
 `Capture Tabs` is the intentional save flow for the current browser window.
 
 1. Open the tabs you want to keep.
@@ -30,6 +35,7 @@ Spaces are named groups of saved links.
 Only normal `http` and `https` URLs are saved. Browser-internal pages such as `chrome://` pages are skipped.
 
 ## Active Tabs
+
 The `Active Tabs` panel shows the normal tabs in the current browser window.
 
 - Drag a tab from `Active Tabs` into a space to save it.
@@ -38,6 +44,7 @@ The `Active Tabs` panel shows the normal tabs in the current browser window.
 - The toolbar Active Tabs control hides or shows the panel and remembers your preference.
 
 ## Saved Bookmarks
+
 Saved bookmarks appear as cards inside spaces.
 
 - Click a card to open the link.
@@ -47,9 +54,10 @@ Saved bookmarks appear as cards inside spaces.
 - Edited URLs must be normal `http` or `https` URLs.
 
 ## Dynamic Save
+
 Dynamic Save is an optional recovery safety net. It is off by default and does not replace `Capture Tabs`.
 
-When Dynamic Save is on, TabShelf keeps a bounded local history of recent recovery snapshots for normal `http` and `https` tabs. Snapshots are stored in local extension storage, not bookmarks.
+When Dynamic Save is on, TabShelf keeps a bounded local history of recent recovery snapshots for normal `http` and `https` tabs across normal browser windows. Snapshots are stored in local extension storage, not bookmarks.
 
 Dynamic Save can:
 
@@ -64,36 +72,46 @@ Dynamic Save can:
 Dynamic Save does not automatically create spaces. A snapshot becomes a normal bookmark-backed space only when you explicitly choose `Save as Space` or `Save Selected` and provide a space name.
 
 ### Recovery History
+
 TabShelf keeps up to 10 recent Dynamic Save snapshots, removes snapshots older than 7 days, skips adjacent duplicate states, and keeps Dynamic Save storage bounded.
 
 ### Safety Checkpoints
+
 Dynamic Save uses a browser alarm only while Dynamic Save is enabled. The checkpoint verifies the recovery state at the selected interval and skips unchanged snapshots.
 
 Available checkpoint intervals are `5 min`, `15 min`, and `30 min`.
 
+TabShelf also refreshes the latest recovery snapshot when TabShelf loads or becomes active, so newly opened normal windows are included without turning Dynamic Save on again in each window.
+
 ## Import and Export
-Use Settings to export or import spaces as JSON.
+
+Use `Settings` -> `Library` to export or import spaces as JSON.
 
 - `Export Spaces` downloads a JSON backup of your current spaces.
 - `Import Spaces` lets you choose a JSON file to restore.
+- Shelf pinned/unpinned state is included in exports and restored on import.
 - Invalid or duplicate URLs are reported before import so you can choose whether to continue and skip them.
 
 Export before destructive maintenance actions if you want a backup.
 
 ## Settings
+
 Open `Settings` from the toolbar to adjust TabShelf behavior.
+
+The compact Settings menu is focused on quick preferences:
 
 - `Theme`: choose `Dark`, `Light`, or `Auto`.
 - `Density`: choose `Compact`, `Dense`, or `Tight`.
-- `Bookmark Root`: choose whether TabShelf stores spaces under `Bookmarks Bar` or `Other Bookmarks`.
 - `External Favicons`: allow or block Google favicon fallback when a site icon is missing.
 - `Smart Names`: clean noisy saved bookmark names and show source domains.
-- `Dynamic Save`: enable recovery snapshots and manage restore, Save as Space, clear, and checkpoint controls.
-- `Export Spaces` and `Import Spaces`: manage JSON backups.
+- `Library`: open bookmark root, backup, and maintenance controls.
+- `Recovery`: open Dynamic Save enablement, checkpoint interval, snapshot status, restore, Save as Space, and clear controls.
 - `Rate TabShelf`: open the appropriate browser store review page.
-- `Delete All Spaces`: remove all TabShelf spaces after backup-aware confirmation.
+
+Use `Library` for `Bookmark Root`, `Export Spaces`, `Import Spaces`, and `Delete All Spaces`. `Delete All Spaces` removes all TabShelf spaces after backup-aware confirmation.
 
 ## Privacy and Data Storage
+
 TabShelf is local-first.
 
 - Spaces and saved links are stored in your local browser bookmarks under a `TabShelf` folder.
@@ -106,22 +124,29 @@ TabShelf is local-first.
 To remove TabShelf data, delete the `TabShelf` bookmarks folder and uninstall the extension.
 
 ## Troubleshooting
+
 ### A tab did not save
+
 Only `http` and `https` tabs are saved. Browser pages, extension pages, blank tabs, and other internal URLs are skipped.
 
 ### A saved bookmark name looks different from the page title
+
 `Smart Names` is on by default. It cleans common noisy suffixes from newly saved bookmark names. Turn `Smart Names` off in Settings if you want future saves to keep raw page titles.
 
 ### I cannot find my spaces in bookmarks
+
 Check the `Bookmark Root` setting. TabShelf can store spaces under `Bookmarks Bar` or `Other Bookmarks`.
 
 ### I want to back up my spaces
+
 Use `Settings` -> `Export Spaces` and keep the downloaded JSON file.
 
 ### Dynamic Save did not create a space
+
 That is expected. Dynamic Save is a recovery history. Use `Save as Space` or `Save Selected` to intentionally convert a snapshot into a normal space.
 
 ## Support
+
 Use the GitHub Issues page for bug reports, feature requests, and support questions:
 
 https://github.com/TheDulli/tabshelf-support/issues
