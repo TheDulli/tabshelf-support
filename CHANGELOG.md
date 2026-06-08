@@ -5,7 +5,23 @@ All notable user-facing changes to TabShelf will be documented in this file.
 ## [Unreleased]
 ### User-facing
 
-- No unreleased user-facing changes.
+
+## [1.7.0] - 2026-06-08
+### User-facing
+
+- Added a `Create empty space` action to the extension popup so users can start a named space directly from the browser toolbar.
+- Added an `Open last used space` action to the extension popup so users can reopen the most recent popup-created or popup-captured space.
+- Added a top-three `Recent spaces` list to the extension popup so users can reopen a specific recent popup space.
+- Added TabShelf page context menu actions so page right-clicks can save normal pages directly into any existing space.
+- Added optional saved-bookmark copying between spaces with Ctrl/Option-drag and a `Copy to Space...` bookmark menu action.
+- Changed space headers so the left fold button controls fold/unfold, while dragging the header itself reorders spaces.
+- Fixed saved-bookmark action menu layering so the taller `Copy to Space...` menu stays above neighboring spaces.
+- Kept open bookmark action menus above neighboring bookmark hover states until the menu is closed or an action is selected.
+- Aligned the space filter clear button to the right edge of the input and kept it hidden until a filter is entered.
+- Added required-name feedback for empty space and bookmark name fields instead of silently ignoring empty submissions.
+- Moved required-name messages into the affected input fields while preserving accessible error text for assistive technology.
+- Reduced favicon console noise by remembering failed external favicon image loads and using the bundled TabShelf icon for those sites while keeping external favicons on by default when enabled. Generic placeholders returned successfully by the favicon service may still appear.
+- Updated the extension description and release notes to explicitly disclose that TabShelf replaces the browser New Tab Page.
 
 
 ## [1.6.0] - 2026-05-14

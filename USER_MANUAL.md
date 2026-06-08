@@ -15,9 +15,12 @@ TabShelf replaces the browser new-tab page with a workspace for saving, organizi
 Spaces are named groups of saved links.
 
 - `New Space` scrolls to the placeholder so you can create an empty space.
+- The extension popup `Create empty space` action prompts for a name and creates an empty space from the browser toolbar.
+- The extension popup `Open last used space` action reopens the most recent space created or captured from the popup.
+- The extension popup `Recent spaces` list shows up to three recent popup spaces so you can reopen a specific one.
 - `Filter spaces` narrows the current visible space list by space name or saved-link text. Clear the filter to show every space again.
-- The grip handle in a space header reorders spaces.
-- The space title folds or unfolds that space.
+- Drag the space header to reorder spaces.
+- Use the fold button on the left side of a space header to fold or unfold that space.
 - `Fold All` folds or unfolds every visible space; while filtering, hidden spaces are left unchanged.
 - Space header actions include the pin icon to pin or unpin the space, open all saved bookmarks, open the space in a new window, rename the space, or delete it.
 - Pinned spaces stay grouped at the top of the space list. Unpinning a space moves it to the top of normal spaces.
@@ -47,11 +50,13 @@ The `Active Tabs` panel shows the normal tabs in the current browser window.
 
 Saved bookmarks appear as cards inside spaces.
 
+- Right-click inside a page, open the TabShelf menu, and choose a space to save that page directly.
 - Click a card to open the link.
 - Hover a card to preview its URL. Long URLs are visually shortened in the tooltip, but the stored URL is not changed.
-- Use the card menu to rename the bookmark, edit its URL, or switch between the website favicon and the TabShelf icon.
+- Use the card menu to rename the bookmark, edit its URL, copy it to another space, or switch between the website favicon and the TabShelf icon.
+- Drag a saved bookmark to another space to move it. Hold Ctrl on Windows/Linux or Option on macOS while dragging to copy it instead.
 - Use the delete button on a card to remove that saved bookmark after confirmation.
-- Edited URLs must be normal `http` or `https` URLs.
+- Saved and edited URLs must be normal `http` or `https` URLs. If a context-menu save points to a URL already in the target space, TabShelf leaves the existing bookmark unchanged.
 
 ## Dynamic Save
 
@@ -102,7 +107,7 @@ The compact Settings menu is focused on quick preferences:
 
 - `Theme`: choose `Dark`, `Light`, or `Auto`.
 - `Density`: choose `Compact`, `Dense`, or `Tight`.
-- `External Favicons`: allow or block Google favicon fallback when a site icon is missing.
+- `External Favicons`: allow or block Google favicon fallback for website icons.
 - `Smart Names`: clean noisy saved bookmark names and show source domains.
 - `Library`: open bookmark root, backup, and maintenance controls.
 - `Recovery`: open Dynamic Save enablement, checkpoint interval, snapshot status, restore, Save as Space, and clear controls.
@@ -115,11 +120,12 @@ Use `Library` for `Bookmark Root`, `Export Spaces`, `Import Spaces`, and `Delete
 TabShelf is local-first.
 
 - Spaces and saved links are stored in your local browser bookmarks under a `TabShelf` folder.
-- Preferences and UI state are stored in local extension storage.
+- Preferences and UI state, including failed external favicon hosts, are stored in local extension storage.
 - Dynamic Save snapshots are stored locally in extension storage only when Dynamic Save is enabled.
 - Dynamic Save checkpoints use the browser `alarms` permission only for local scheduling while Dynamic Save is enabled.
+- Browser page right-click save actions use the `contextMenus` permission only to add TabShelf entries to that browser menu.
 - TabShelf does not transmit your shelf or bookmark data to a remote server.
-- External favicon fallback may request favicon images from site icons or Google's favicon service when enabled.
+- External favicon fallback may request favicon images from Google's favicon service when enabled. Hosts that fail to load are remembered locally so TabShelf can use the bundled TabShelf icon for that site next time. If the favicon service returns a generic placeholder as a successful image, that placeholder may still appear.
 
 To remove TabShelf data, delete the `TabShelf` bookmarks folder and uninstall the extension.
 
